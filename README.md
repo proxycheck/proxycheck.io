@@ -7,7 +7,7 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 ### Service Limits
 * Free users without an API Key = 100 Daily Queries
 * Free users with an API Key = 1,000 Daily Queries
-* Paid users with an API Key = 10,000 to 340,000+ Daily Queries
+* Paid users with an API Key = 10,000 to 240,000+ Daily Queries
 
 ### Features
 * IPv4 and IPv6 support for both the querying client and the IP being checked
