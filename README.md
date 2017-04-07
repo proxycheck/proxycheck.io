@@ -1,8 +1,11 @@
 # proxycheck.io
-proxycheck.io is a service dedicated to providing you an easy to query, reliable and accurate proxy detection API for your coding projects.
+https://proxycheck.io is a service dedicated to providing you an easy to query, reliable and accurate proxy detection API for your coding projects.
 
 
 Our aim on GitHub is to offer example code that utilises our API so that developers can easily integrate our service into their projects.
+
+### Quick Links
+<a href="https://proxycheck.io">Get an API Key (it's free!)</a> | <a href="https://proxycheck.io/api">API Documentation</a> | <a href="https://proxycheck.io/web">Query the API on our Website</a> | <a href="https://proxycheck.io/dashboard">Dashboard (For API Key holders)</a>
 
 ### Service Limits
 * Free users without an API Key = 100 Daily Queries
@@ -19,8 +22,8 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 * Multiple geographically seperated servers for load distribution and redundancy
 
 ### Usage Scenarios
-* Protecting Blogs and Forums from spam bots
-* Protecting Chat systems and Game Servers from Bots/Spammers/Cheaters
-* Protecting payment systems from fradulent transactions
-* Restricting content to a specific country by blocking Proxy/VPN users
-* Protecting all manner of services from previously banned users
+* Protect Blogs and Forums from spam bots
+* Protect Chat systems and Game Servers from Bots/Spammers/Cheaters
+* Protect payment systems from fradulent transactions
+* Restrict content to a specific country by blocking Proxy/VPN users
+* Protect all manner of services from previously banned users
