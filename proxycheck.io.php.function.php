@@ -14,7 +14,7 @@
 
     $API_Key = ""; // Supply your API key between the quotes if you have one
     $VPN = "0"; // Change this to 1 if you wish to perform VPN Checks on your visitors
-    $TLS = "1"; // Change this to 1 to enable transport security, TLS is much slower though!
+    $TLS = "0"; // Change this to 1 to enable transport security, TLS is much slower though!
 
     // ------------------------------
     // END OF SETTINGS
