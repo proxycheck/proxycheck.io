@@ -15,6 +15,7 @@
     $API_Key = ""; // Supply your API key between the quotes if you have one
     $VPN = "0"; // Change this to 1 if you wish to perform VPN Checks on your visitors
     $TLS = "0"; // Change this to 1 to enable transport security, TLS is much slower though!
+    $TAG = "1"; // This setting tags your queries with a message you can view in your dashboard stats
 
     // ------------------------------
     // END OF SETTINGS
@@ -27,9 +28,17 @@
       $Transport_Type_String = "http://";
     }
     
+    // By default the tag used is your querying domain and the webpage being accessed
+    // However you can supply your own descriptive tag or disable tagging altogether.
+    if ( $TAG == 1 ) {
+      $Query_Tag = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    } else {
+      $Query_Tag = "";
+    }
+    
     // Performing the API query to proxycheck.io/v1/ using cURL
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $Transport_Type_String . 'proxycheck.io/v1/' . $Visitor_IP . '&key=' . $API_Key . '&vpn=' . $VPN);
+    curl_setopt($ch, CURLOPT_URL, $Transport_Type_String . 'proxycheck.io/v1/' . $Visitor_IP . '&key=' . $API_Key . '&vpn=' . $VPN . "&tag=" . urlencode($Query_Tag));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $API_JSON_Result = curl_exec($ch);
     curl_close($ch);
