@@ -38,7 +38,7 @@
     
     // Performing the API query to proxycheck.io/v1/ using cURL
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $Transport_Type_String . 'proxycheck.io/v1/' . $Visitor_IP . '&key=' . $API_Key . '&vpn=' . $VPN . '&tag=' . urlencode($Query_Tag));
+    curl_setopt($ch, CURLOPT_URL, $Transport_Type_String . 'proxycheck.io/v1/' . $Visitor_IP . '&key=' . $API_Key . '&vpn=' . $VPN . '&tag=' . htmlspecialchars($Query_Tag));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $API_JSON_Result = curl_exec($ch);
     curl_close($ch);
