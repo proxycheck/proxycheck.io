@@ -35,12 +35,11 @@
     // By default the tag used is your querying domain and the webpage being accessed
     // However you can supply your own descriptive tag or disable tagging altogether above.
     if ( $TAG == 1 && $Custom_Tag == "" ) {
-      $Query_Tag = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-      $Post_Field = "tag=" . $Query_Tag;
+      $Post_Field = "tag=" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     } else if ( $TAG == 1 && $Custom_Tag != "" ) {
-      $Query_Tag = $Custom_Tag;
+      $Post_Field = "tag=" . $Custom_Tag;
     } else {
-      $Query_Tag = "";
+      $Post_Field = "";
     }
     
     // Performing the API query to proxycheck.io/v1/ using cURL
