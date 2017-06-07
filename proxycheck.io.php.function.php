@@ -2,7 +2,6 @@
 
   /*
   * A PHP Function which checks if the IP Address specified is a Proxy Server utilising the API provided by https://proxycheck.io
-  * This example includes not only the function itself but also some example code that utilises the function at the very bottom.
   * This function is covered under an MIT License.
   */
 
@@ -80,27 +79,5 @@
     }
     
   }
-  
-  // ------------------------------
-  // EXAMPLE
-  // ------------------------------
-
-  // If you're using CloudFlare change $_SERVER["REMOTE_ADDR"] to $_SERVER["HTTP_CF_CONNECTING_IP"]
-  if ( proxycheck_function($_SERVER["REMOTE_ADDR"]) ) {
-    
-    // Example of a Proxy being detected
-    echo "Please turn your Proxy Server off and try our website again.";
-    exit;
-
-  } else {
-    
-    // No proxy detected.
-    echo "No proxy detected.";
-    
-  }
-
-  // ------------------------------
-  // END OF EXAMPLE
-  // ------------------------------
 
 ?>
