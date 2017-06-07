@@ -18,6 +18,7 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 * Check if an IP is operating as a VPN Server
 * Check the ASN that the IP belongs to
 * Check the Country of the IP
+* Tag queries with descriptions for later analysis
 * Very fast proxy checking (99% answered under 11ms not including network overhead)
 * Multiple geographically seperated servers for load distribution and redundancy
 
