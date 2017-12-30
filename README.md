@@ -10,16 +10,20 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 ### Service Limits
 * Free users without an API Key = 100 Daily Queries
 * Free users with an API Key = 1,000 Daily Queries
-* Paid users with an API Key = 10,000 to 2.56 Million+ Daily Queries
+* Paid users with an API Key = 10,000 to 10.24 Million+ Daily Queries
 
 ### Features
 * IPv4 and IPv6 support for both the querying client and the IP being checked
 * Check if an IP is operating as a Proxy Server
 * Check if an IP is operating as a VPN Server
-* Check the ASN that the IP belongs to
+* Check up-to 100 IP Addresses in a single query (v2 API)
+* Check the ASN and Company that the IP belongs to
 * Check the Country of the IP
 * Tag queries with descriptions for later analysis
-* Very fast proxy checking (99% answered in under 11ms not including network overhead)
+* Comprehensive statistics and logging with API exporting
+* Whitelist and Blacklist support for API Key holders (Free and Paid) with API
+* Inference Engine access for real-time and post-query detections
+* Very fast proxy checking (99% answered in under 100ms not including network overhead)
 * Multiple geographically seperated servers for load distribution and redundancy
 
 ### Usage Scenarios
