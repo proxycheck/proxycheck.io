@@ -41,8 +41,8 @@
       $Post_Field = "";
     }
     
-    // Performing the API query to proxycheck.io/v1/ using cURL
-    $ch = curl_init($Transport_Type_String . 'proxycheck.io/v1/' . $Visitor_IP . '&key=' . $API_Key . '&vpn=' . $VPN);
+    // Performing the API query to proxycheck.io/v2/ using cURL
+    $ch = curl_init($Transport_Type_String . 'proxycheck.io/v2/' . $Visitor_IP . '?key=' . $API_Key . '&vpn=' . $VPN);
     
     $curl_options = array(
       CURLOPT_CONNECTTIMEOUT => 30,
@@ -59,7 +59,7 @@
     $Decoded_JSON = json_decode($API_JSON_Result);
 
     // Check if the IP we're testing is a proxy server
-    if ( $Decoded_JSON->proxy == "yes" && $Decoded_JSON->ip == $Visitor_IP ) {
+    if ( $Decoded_JSON->$Visitor_IP->proxy == "yes" ) {
 
       // A proxy has been detected.
       return true;
