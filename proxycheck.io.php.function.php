@@ -66,13 +66,6 @@
       
     } else {
       
-      if ( $Decoded_JSON->ip != $Visitor_IP ) {
-      
-        // If an error occured while querying the API this is where the error will be caught.
-        // It is recommended for you to setup some kind of alert or log entry to capture these errors for later analysis.
-      
-      }
-      
       // No proxy has been detected.
       return false;
       
