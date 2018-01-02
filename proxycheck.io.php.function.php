@@ -59,7 +59,7 @@
     $Decoded_JSON = json_decode($API_JSON_Result);
 
     // Check if the IP we're testing is a proxy server
-    if ( $Decoded_JSON->$Visitor_IP->proxy == "yes" ) {
+    if ( isset($Decoded_JSON->$Visitor_IP->proxy) && $Decoded_JSON->$Visitor_IP->proxy == "yes" ) {
 
       // A proxy has been detected.
       return true;
