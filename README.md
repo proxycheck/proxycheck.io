@@ -16,7 +16,7 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 * IPv4 and IPv6 support for both the querying client and the IP being checked
 * Check if an IP is operating as a Proxy Server
 * Check if an IP is operating as a VPN Server
-* Check up-to 100 IP Addresses in a single query (v2 API)
+* Check up-to 1,000 IP Addresses in a single query (v2 API)
 * Check the ASN and Company that the IP belongs to
 * Check the Country of the IP
 * Tag queries with descriptions for later analysis
