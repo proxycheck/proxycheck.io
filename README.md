@@ -1,6 +1,5 @@
 # proxycheck.io
-https://proxycheck.io is a service dedicated to providing you an easy to query, reliable and accurate proxy detection API for your coding projects.
-
+https://proxycheck.io is a service which provides an easy to query, accurate and reliable API for the purposes of proxy blocking.
 
 Our aim on GitHub is to offer example code that utilises our API so that developers can easily integrate our service into their projects.
 
