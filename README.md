@@ -18,12 +18,14 @@ Our aim on GitHub is to offer example code that utilises our API so that develop
 * Check if an IP is operating as a VPN Server
 * Check up-to 1,000 IP Addresses in a single query (v2 API)
 * Check the ASN and Company that the IP belongs to
-* Check the Country of the IP
+* Check the Country that the IP belongs to
+* View the port number the proxy server is operating on
+* View how recently we saw an IP Address operating as a proxy server
 * Tag queries with descriptions for later analysis
 * Comprehensive statistics and logging with API exporting
 * Whitelist and Blacklist support for API Key holders (Free and Paid) with API
 * Inference Engine access for real-time and post-query detections
-* Very fast proxy checking (99% answered in under 100ms not including network overhead)
+* Very fast proxy checking (average 6ms not including network overhead)
 * Multiple geographically seperated servers for load distribution and redundancy
 
 ### Usage Scenarios
