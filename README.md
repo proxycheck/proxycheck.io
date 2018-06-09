@@ -3,6 +3,9 @@ https://proxycheck.io is a service which provides an easy to query, accurate and
 
 Our aim on GitHub is to offer example code that utilises our API so that developers can easily integrate what we consider the best proxy blocker into their projects.
 
+### Composer
+The function featured here is a basic example. We recommend you use our Composer library featured [here](https://github.com/proxycheck/proxycheck-php) instead which has more features, exposes more information for you to use in your program and supports library side country blocking.
+
 ### Quick Links
 <a href="https://proxycheck.io">Get an API Key (it's free!)</a> | <a href="https://proxycheck.io/api">API Documentation</a> | <a href="https://proxycheck.io/web">Query the API on our Website</a> | <a href="https://proxycheck.io/dashboard">Dashboard (For API Key holders)</a>
 
