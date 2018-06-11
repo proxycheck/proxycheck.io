@@ -10,7 +10,7 @@ The function featured here is a basic example. We recommend you use our Composer
 
 Download the [proxycheck.io.php.function.php](https://github.com/proxycheck/proxycheck.io/blob/master/proxycheck.io.php.function.php) and place it in the root folder of your website.
 
-Near the top of the file you will see a settings section near the top where you should populate your API Key and toggle any settings you want to use like below.
+Near the top of the file you will see a settings section where you should populate your API Key and toggle any settings you want to use like below.
 
 ```php
 // ------------------------------
