@@ -53,6 +53,16 @@ if ( proxycheck_function($_SERVER["REMOTE_ADDR"]) ) {
     
 }
 ```
+If the page you wish to utilise the function in is inside a folder you can use ```..\\``` to traverse backwards. For example if your folder structure is like this:
+
+```
+Root \ WWW \ MyWebsite \ Blog \ Login.php
+```
+And you have the function in the folder called ```MyWebsite``` you could call it using the following include.
+
+```php
+include_once "..\\..\\proxycheck.io.php.function.php";
+```
 
 ## Service Limits
 * Free users without an API Key = 100 Daily Queries
