@@ -58,7 +58,7 @@ If the page you wish to utilise the function in is inside a folder you can use `
 ```
 Root \ WWW \ MyWebsite \ Blog \ Login.php
 ```
-And you have the function in the folder called ```MyWebsite``` you could call it using the following include.
+And you have the function in the folder called ```MyWebsite``` you could call it using the following include from inside the login.php file.
 
 ```php
 include_once "..\\..\\proxycheck.io.php.function.php";
